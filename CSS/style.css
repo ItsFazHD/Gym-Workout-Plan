@@ -1,0 +1,49 @@
+body.bg{
+    background-color: rgb(181, 181, 181);
+}
+
+hr{
+    border-color: black;
+}
+
+p{
+    font-size: large;
+}
+
+img{
+    width: 400px;
+}
+
+button{
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+}
+
+.Upper{
+    background-color: rgb(170, 170, 237);
+    color: black;
+}
+
+.Lower{
+    background-color: rgb(255, 110, 110);
+    color: black;
+}
+.footer{
+    font-size: medium;
+}
+
+div.paragraph{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+div.list{
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    max-width: 120px;
+}
