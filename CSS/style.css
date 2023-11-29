@@ -10,7 +10,7 @@ p{
     font-size: large;
 }
 
-img{
+.ronnie{
     width: 400px;
 }
 
@@ -46,4 +46,9 @@ div.list{
     border-width: 2px;
     border-radius: 10px;
     max-width: 120px;
+}
+
+.gif {
+    width: 200px;
+
 }
