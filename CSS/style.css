@@ -11,6 +11,9 @@ p{
 }
 
 .ronnie{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 400px;
 }
 
@@ -45,10 +48,15 @@ div.list{
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
-    max-width: 120px;
+    max-width: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gif {
     width: 200px;
-
+}
+.split {
+    text-align: center;
 }
