@@ -1,9 +1,15 @@
-body.bg{
-    background-color: rgb(181, 181, 181);
+body{
+    background-image: url(/Images/barbell-dark-grungy-gym-with-blue-red-neon-light_175682-29567.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: rgb(255, 255, 255);
 }
 
 hr{
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
 
 p{
@@ -14,24 +20,17 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 300px;
 }
 
 button{
     text-align: center;
-    font-size: small;
+    font-size: medium;
     border-radius: 6px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(255, 255, 255);
 }
 
-.Upper{
-    background-color: rgb(144, 144, 144);
-    color: black;
-}
-
-.Lower{
-    background-color: rgb(255, 110, 110);
-    color: black;
-}
 .footer{
     font-size: medium;
 }
@@ -48,7 +47,7 @@ div.list{
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
-    max-width: 160px;
+    max-width: 130px;
     display: block;
     margin-left: auto;
     margin-right: auto;
