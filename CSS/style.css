@@ -59,3 +59,16 @@ div.list{
 .split {
     text-align: center;
 }
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+button.upper::after{
+    content: "💪";
+}
+
+button.lower::after{
+    content: "🦵";
+}
