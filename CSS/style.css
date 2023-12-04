@@ -16,18 +16,11 @@ p{
     font-size: large;
 }
 
-.ronnie{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-}
-
 button{
     text-align: center;
     font-size: medium;
     border-radius: 6px;
-    background-color: rgb(28, 28, 28);
+    background-color: rgba(28, 28, 28, 0);
     color: rgb(255, 255, 255);
 }
 
@@ -65,10 +58,25 @@ button:hover{
     color: black;
 }
 
-button.upper::after{
-    content: "💪";
+.pagination{
+    text-align: center;
 }
 
-button.lower::after{
-    content: "🦵";
+.pagination a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active{
+    background-color: hsl(0, 0%, 50%);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: hsl(0, 0%, 77%);
+    border-radius: 5px;
 }
