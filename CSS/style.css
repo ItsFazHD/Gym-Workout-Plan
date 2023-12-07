@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Images/barbell-dark-grungy-gym-with-blue-red-neon-light_175682-29567.avif);
+    background-image: url(/Images/dark_background_2-wallpaper-2560x1600.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -16,14 +16,6 @@ p{
     font-size: large;
 }
 
-button{
-    text-align: center;
-    font-size: medium;
-    border-radius: 6px;
-    background-color: rgba(28, 28, 28, 0);
-    color: rgb(255, 255, 255);
-}
-
 .footer{
     font-size: medium;
 }
@@ -32,7 +24,9 @@ div.paragraph{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 2px;
+    background-image: url(/Images/pngtree-dark-gym-with-equipments-picture-image_2773570.jpg);
+    background-position: center;
 }
 
 div.list{
@@ -51,11 +45,6 @@ div.list{
 }
 .split {
     text-align: center;
-}
-
-button:hover{
-    background-color: white;
-    color: black;
 }
 
 .pagination{
@@ -79,4 +68,66 @@ button:hover{
 .pagination a:hover:not(.active){
     background-color: hsl(0, 0%, 77%);
     border-radius: 5px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    text-align: center;
+    font-size: medium;
+    border: none;
+    background-color: rgba(37, 37, 37, 0);
+    color: rgb(255, 255, 255);
+}
+.dropdown a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.dropdown .upper{
+    display:none;
+    position: absolute;
+    background-color: rgb(70, 70, 70);
+}
+.dropdown:hover .upper{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(122, 122, 122);
+}
+
+.dropdown a:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+.dropdown2{
+    display: inline-block;
+}
+.dropdown2 button{
+    text-align: center;
+    font-size: medium;
+    border: none;
+    background-color: rgba(37, 37, 37, 0);
+    color: rgb(255, 255, 255);
+}
+.dropdown2 a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.dropdown2 .lower{
+    display:none;
+    position: absolute;
+    background-color: rgb(70, 70, 70);
+}
+.dropdown2:hover .lower{
+    display: block;
+}
+.dropdown2:hover button{
+    background-color: rgb(122, 122, 122);
+}
+
+.dropdown2 a:hover{
+    background-color: rgb(124, 124, 124);
 }
