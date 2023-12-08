@@ -1,9 +1,10 @@
 body{
-    background-image: url(/Images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-image: url();
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-color: hsl(0, 0%, 18%);
 
     color: rgb(255, 255, 255);
 
@@ -25,7 +26,7 @@ hr{
 
 .navbar ul{
     list-style-type: none;
-    background-color: hsla(0, 0%, 80%, 0);
+    background-color: hsl(0, 0%, 10%);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -82,4 +83,47 @@ div.paragraph{
 .pagination a:hover:not(.active){
     background-color: hsl(0, 0%, 77%);
     border-radius: 5px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: medium;
+}
+
+.dropdown-upper{
+    float: left;
+    overflow: hidden;
+}
+.dropdown-content-upper{
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: hsl(0, 0%, 15%);
+}
+.dropdown-content-upper a{
+    float: none;
+    display: block;
+}
+.dropdown-upper:hover .dropdown-content-upper{
+    display: block;
+}
+
+.dropdown-lower{
+    float: left;
+    overflow: hidden;
+}
+.dropdown-content-lower{
+    display: none;
+    position: absolute;
+    margin-top: 50px;
+    background-color: hsl(0, 0%, 15%);
+}
+.dropdown-content-lower a{
+    float: none;
+    display: block;
+}
+.dropdown-lower:hover .dropdown-content-lower{
+    display: block;
 }
