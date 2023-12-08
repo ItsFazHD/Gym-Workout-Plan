@@ -157,7 +157,7 @@ footer{
     text-align: center;
     padding: 10px;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:300px) {
         /*this caters for mobile users*/
     aside, main, p{
         width: 100%;
