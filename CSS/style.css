@@ -1,14 +1,22 @@
-body{
-    background-image: url(/Images/pexels-joão-jesus-925743.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: hsl(0, 0%, 18%);
+*{
+    box-sizing: border-box;
+}
+header{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
 
+dl{
     color: rgb(0, 0, 0);
-
-    margin: 0px;
+}
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url(/Images/debec5e443771298de35e62907829793.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 main{
@@ -18,6 +26,7 @@ main{
 
 h1{
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .navbar ul{
@@ -43,11 +52,6 @@ h1{
 
 p{
     font-size: large;
-}
-
-.footer{
-    margin-top: 430px;
-    font-size: medium;
 }
 
 div.paragraph{
@@ -122,4 +126,30 @@ button{
 }
 .dropdown-lower:hover .dropdown-content-lower{
     display: block;
+}
+aside{
+    width: 33%;
+    float: left;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: hsl(0, 0%, 10%);
+    display: block;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:600px) {
+    /*this caters for mobile users*/
+    aside, main, p{
+        width: 100%
+    }
 }
