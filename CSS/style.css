@@ -10,7 +10,7 @@ dl{
     color: rgb(0, 0, 0);
 }
 .bg{
-    background-image: url(/Images/debec5e443771298de35e62907829793.jpg);
+    background-image: linear-gradient(to bottom, white, rgb(20, 20, 20));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ dl{
     scroll-behavior: smooth;
 }
 .bg-content{
-    background-image: url(/Images/desktop-wallpaper-strength-exercises-3d-icon-white-background-3d-symbols-strength-exercises-sport-icons-3d-icons-strength-exercises-sign-sport-3d-icons.jpg);
+    background-image: linear-gradient(to bottom left, white, rgb(32, 32, 32));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
