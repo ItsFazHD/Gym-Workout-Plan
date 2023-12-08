@@ -159,7 +159,7 @@ footer{
 }
 @media screen and (max-width:500px) {
         /*this caters for mobile users*/
-    aside, main, p{
+    aside{
         width: 100%;
     }
 }
