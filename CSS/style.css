@@ -15,6 +15,7 @@ dl{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
+    scroll-behavior: smooth;
 }
 .bg-content{
     background-image: url(/Images/desktop-wallpaper-strength-exercises-3d-icon-white-background-3d-symbols-strength-exercises-sport-icons-3d-icons-strength-exercises-sign-sport-3d-icons.jpg);
@@ -22,6 +23,7 @@ dl{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
