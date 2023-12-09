@@ -9,7 +9,10 @@ header{
 dl{
     color: rgb(0, 0, 0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 928a313 (lined title, text gif)
 .bg{
     background-image: linear-gradient(to bottom, white, rgb(20, 20, 20));
     background-position: center;
@@ -153,10 +156,18 @@ footer{
     text-align: center;
     padding: 10px;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width:500px) {
     /*this caters for mobile users*/
 aside, main, main{
     width: 100%;
 }
+=======
+@media screen and (max-width:500px) {
+        /*this caters for mobile users*/
+    aside, main, p{
+        width: 100%;
+    }
+>>>>>>> parent of 928a313 (lined title, text gif)
 }
