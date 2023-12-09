@@ -67,6 +67,17 @@ p{
 div.paragraph{
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+.dt-title{
+    margin-left: 40px;
+}
+
+.margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+>>>>>>> parent of aa22821 (title margin change)
 
 .gif {
     width: 200px;
