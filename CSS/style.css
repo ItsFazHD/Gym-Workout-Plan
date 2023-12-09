@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     color: rgb(255, 255, 255);
@@ -10,19 +12,11 @@ dl{
     color: rgb(0, 0, 0);
 }
 .bg{
-    background-image: linear-gradient(to bottom, white, rgb(20, 20, 20));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
+    background-color: hsl(0, 0%, 90%);
     scroll-behavior: smooth;
 }
 .bg-content{
-    background-image: linear-gradient(to bottom left, white, rgb(32, 32, 32));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
+    background-color: hsl(0, 0%, 90%);
     scroll-behavior: smooth;
 }
 body{
@@ -54,6 +48,7 @@ h1{
 }
 .navbar li{
     float: left;
+    
 }
 
 p{
@@ -63,9 +58,22 @@ p{
 div.paragraph{
     text-align: center;
 }
+.dt-title{
+    margin-left: 40px;
+}
+
+.margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .gif {
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 0%);
     width: 200px;
+}
+.gif:hover{
+    border: 2px solid hsl(0, 0%, 60%);
 }
 
 .pagination{
