@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     color: rgb(255, 255, 255);
@@ -9,24 +11,12 @@ header{
 dl{
     color: rgb(0, 0, 0);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 928a313 (lined title, text gif)
 .bg{
-    background-image: linear-gradient(to bottom, white, rgb(20, 20, 20));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
+    background-color: hsl(0, 0%, 90%);
     scroll-behavior: smooth;
 }
 .bg-content{
-    background-image: linear-gradient(to bottom left, white, rgb(32, 32, 32));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
+    background-color: hsl(0, 0%, 90%);
     scroll-behavior: smooth;
 }
 body{
@@ -58,6 +48,7 @@ h1{
 }
 .navbar li{
     float: left;
+    
 }
 
 p{
@@ -67,8 +58,6 @@ p{
 div.paragraph{
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 .dt-title{
     margin-left: 40px;
 }
@@ -77,10 +66,14 @@ div.paragraph{
     margin-left: 10px;
     margin-right: 10px;
 }
->>>>>>> parent of aa22821 (title margin change)
 
 .gif {
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 0%);
     width: 200px;
+}
+.gif:hover{
+    border: 2px solid hsl(0, 0%, 60%);
 }
 
 .pagination{
@@ -167,18 +160,9 @@ footer{
     text-align: center;
     padding: 10px;
 }
-<<<<<<< HEAD
-
-@media screen and (max-width:500px) {
-    /*this caters for mobile users*/
-aside, main, dd{
-    width: 100%;
-}
-=======
 @media screen and (max-width:500px) {
         /*this caters for mobile users*/
     aside, main, p{
         width: 100%;
     }
->>>>>>> parent of 928a313 (lined title, text gif)
 }
