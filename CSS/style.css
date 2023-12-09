@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 header{
     color: rgb(255, 255, 255);
@@ -13,11 +11,19 @@ dl{
 }
 
 .bg{
-    background-color: hsl(0, 0%, 90%);
+    background-image: linear-gradient(to bottom, white, rgb(20, 20, 20));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
     scroll-behavior: smooth;
 }
 .bg-content{
-    background-color: hsl(0, 0%, 90%);
+    background-image: linear-gradient(to bottom left, white, rgb(32, 32, 32));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
     scroll-behavior: smooth;
 }
 body{
@@ -60,12 +66,7 @@ div.paragraph{
 }
 
 .gif {
-    display: inline-block;
-    border: 2px solid hsl(0, 0%, 0%);
     width: 200px;
-}
-.gif:hover{
-    border: 2px solid hsl(0, 0%, 60%);
 }
 
 .pagination{
