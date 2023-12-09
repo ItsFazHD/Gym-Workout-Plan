@@ -11,9 +11,7 @@ header{
 dl{
     color: rgb(0, 0, 0);
 }
-dd{
-    margin-left: 20px;
-}
+
 .bg{
     background-color: hsl(0, 0%, 90%);
     scroll-behavior: smooth;
