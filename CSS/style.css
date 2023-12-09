@@ -4,7 +4,6 @@
 header{
     color: rgb(255, 255, 255);
     text-align: center;
-    overflow: hidden;
 }
 
 dl{
@@ -27,7 +26,6 @@ dl{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
     background-color: rgb(255, 255, 255);
 }
 
@@ -147,7 +145,7 @@ aside{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 
