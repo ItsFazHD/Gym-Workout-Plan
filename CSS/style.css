@@ -14,6 +14,7 @@ dl{
 dd{
     margin-left: 20px;
     margin-right: 20px;
+    position: relative;
 }
 .bg{
     background-color: hsl(0, 0%, 90%);
