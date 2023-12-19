@@ -26,6 +26,25 @@ body{
     margin: 0;
     background-color: rgb(255, 255, 255);
 }
+.home-para{
+    animation-name: slideLeft;
+    animation-duration: 3s;
+}
+.home-para2{
+    animation-name: slideLeft;
+    animation-duration: 6s;
+}
+.home-para3{
+    animation-name: slideLeft;
+    animation-duration: 9s;
+}
+@keyframes slideLeft{
+    from{transform: translateX(300%);}
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 h1{
     padding-top: 10px;
@@ -47,13 +66,16 @@ h1{
     padding: 15px;
     display: block;
     text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 .navbar a:hover{
     background-color: hsl(0, 0%, 60%);
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 .navbar li{
     float: left;
-    
 }
 
 p{
