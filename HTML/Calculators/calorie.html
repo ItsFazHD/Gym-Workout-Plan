@@ -14,12 +14,14 @@
     <script src="/JS/Time.js" defer></script>
     <script src="/JS/Date.js" defer></script>
     <script src="/JS/Calorie.js" defer></script>
-    <title>Document</title>
+    <title>Calorie Deficit Calculator</title>
 </head>
 
 <body class="bg">
     <header class="bg-header">
         <h1>Calorie Deficit Calculator</h1>
+        <label id="myLabel2" for="date"></label>
+        <br> <br>
         <label id="myLabel" for="time"></label>
 
         <nav class="navbar">
@@ -58,28 +60,54 @@
         </nav>
     </header>
     <br>
-    <table id="hiddenTable">
-        <tr>
-            <th class="arrowBox">Maintenance</th>
-            <td class="resultBox">2500</td>
-        </tr>
+    <div class="container">
+        Enter your Age: <input type="text" name="height" id="age" class="textBox"> Years old
+        <br> <br>
+        Gender:
+        <input type="radio" name="male" id="male"> Male
+        <input type="radio" name="female" id="female"> Female
+        <br> <br>
+        Enter your height: <input type="text" name="height" id="height" class="textBox"> cm
+        <br> <br>
+        Enter your weight: <input type="text" name="weight" id="weight" class="textBox"> kg
+        <br> <br>
+        Pick activity level:
+        input
+        <input type="checkbox" name="" id=""> Sedentary
+        <input type="checkbox" name="" id=""> light
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <br> <br>
+        <button type="submit" class="submit" id="submitBtn">Calculate</button>
+        <br> <br>
+        <table id="hiddenTable">
+            <tr>
+                <th class="arrowBox">BMR</th>
+                <td class="resultBox"><label for="BMR"></label></td>
+            </tr>
 
-        <tr>
-            <th class="arrowBox">Mild Weight Loss</th>
-            <td class="resultBox"></td>
-        </tr>
+            <tr>
+                <th class="arrowBox">Maintenance</th>
+                <td class="resultBox"><label for="Maintenance"></label></td>
+            </tr>
 
-        <tr>
-            <th class="arrowBox">Maintenance</th>
-            <td class="resultBox"></td>
-        </tr>
+            <tr>
+                <th class="arrowBox">Mild Weight Loss</th>
+                <td class="resultBox"><label for="Mild"></label></td>
+            </tr>
 
-        <tr>
-            <th class="arrowBox">Maintenance</th>
-            <td class="resultBox"></td>
-        </tr>
+            <tr>
+                <th class="arrowBox">Weight Loss</th>
+                <td class="resultBox"><label for="weight"></label></td>
+            </tr>
 
-    </table>
+            <tr>
+                <th class="arrowBox">Extreme Weight Loss</th>
+                <td class="resultBox"><label for="Extreme"></label></td>
+            </tr>
+
+        </table>
+    </div>
 </body>
 
 </html>
