@@ -228,3 +228,22 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+#hiddenTable {
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrowBox {
+  position: relative;
+  background: hsl(0, 0%, 10%);
+  border: 1px solid #aaa;
+  padding: 3px 8px;
+  text-align: center;
+  color: white;
+}
+.resultBox {
+  background: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 10%);
+  padding: 3px 8px;
+  text-align: center;
+}
