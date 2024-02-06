@@ -17,6 +17,7 @@ document.getElementById("submitBtn").onclick = function () {
   if (total >= 27.5) {
     document.getElementById("BMI").innerHTML =
       "Your BMI is: " + rounded + " You are obese";
+    document.getElementById("hideImg").style.display = "block";
   } else if (total >= 23) {
     document.getElementById("BMI").innerHTML =
       "Your BMI is: " + rounded + " You are overweight";
