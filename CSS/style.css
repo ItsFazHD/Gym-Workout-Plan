@@ -1,188 +1,221 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-header{
-    color: rgb(255, 255, 255);
-    background-color: hsl(0, 0%, 10%);
-    text-align: center;
-    position: relative;
-    top: -22px;
-}
-
-dl{
-    color: rgb(0, 0, 0);
-}
-.bg{
-    background-color: hsl(0, 0%, 90%);
-    scroll-behavior: smooth;
-}
-.bg-content{
-    background-color: hsl(0, 0%, 90%);
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-}
-.home-para{
-    animation-name: slideLeft;
-    animation-duration: 3s;
-}
-.home-para2{
-    animation-name: slideLeft;
-    animation-duration: 6s;
-}
-.home-para3{
-    animation-name: slideLeft;
-    animation-duration: 9s;
-}
-@keyframes slideLeft{
-    from{transform: translateX(300%);}
-}
-@keyframes fadeIn{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+header {
+  color: rgb(255, 255, 255);
+  background-color: hsl(0, 0%, 10%);
+  text-align: center;
+  position: relative;
+  top: -22px;
 }
 
-h1{
-    padding-top: 10px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: hsl(0, 0%, 10%);
+dl {
+  color: rgb(0, 0, 0);
+}
+.bg {
+  background-color: hsl(0, 0%, 90%);
+  scroll-behavior: smooth;
+}
+.bg-content {
+  background-color: hsl(0, 0%, 90%);
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+.home-para {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+}
+.home-para2 {
+  animation-name: slideLeft;
+  animation-duration: 3s;
+}
+.home-para3 {
+  animation-name: slideLeft;
+  animation-duration: 5s;
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(300%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: hsl(0, 0%, 10%);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-}
-.navbar a:hover{
-    background-color: hsl(0, 0%, 60%);
-    animation-name: fadeIn;
-    animation-duration: 1s;
-}
-.navbar li{
-    float: left;
+h1 {
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: hsl(0, 0%, 10%);
 }
 
-p{
-    font-size: large;
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 10%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.navbar a:hover {
+  background-color: hsl(0, 0%, 60%);
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+.navbar li {
+  float: left;
 }
 
-div.paragraph{
-    text-align: center;
+p {
+  font-size: large;
 }
-.dt-title{
-    margin-left: 20px;
+
+div.paragraph {
+  text-align: center;
 }
-dd{
-    margin-left: 20px;
-    margin-right: 20px;
+.dt-title {
+  margin-left: 20px;
+}
+dd {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .gif {
-    display: inline-block;
-    border: 2px solid hsl(0, 0%, 0%);
-    width: 200px;
+  display: inline-block;
+  border: 2px solid hsl(0, 0%, 0%);
+  width: 200px;
 }
-.gif:hover{
-    border: 2px solid hsl(0, 0%, 60%);
-}
-
-.pagination{
-    text-align: center;
+.gif:hover {
+  border: 2px solid hsl(0, 0%, 60%);
 }
 
-.pagination a{
-    color: rgb(255, 255, 255);
-    background-color: hsl(0, 0%, 18%);
-    text-decoration: none;
-    padding: 8px 15px;
-    display: inline-block;
+.pagination {
+  text-align: center;
 }
 
-.pagination a.active{
-    background-color: hsl(0, 0%, 50%);
-    font-weight: bold;
-    border-radius: 5px;
+.pagination a {
+  color: rgb(255, 255, 255);
+  background-color: hsl(0, 0%, 18%);
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
 }
 
-.pagination a:hover:not(.active){
-    background-color: hsl(0, 0%, 77%);
-    border-radius: 5px;
+.pagination a.active {
+  background-color: hsl(0, 0%, 50%);
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: medium;
+.pagination a:hover:not(.active) {
+  background-color: hsl(0, 0%, 77%);
+  border-radius: 5px;
 }
 
-.dropdown-upper{
-    float: left;
-    overflow: hidden;
-}
-.dropdown-content-upper{
-    display: none;
-    position: absolute;
-    margin-top: 50px;
-    background-color: hsl(0, 0%, 15%);
-}
-.dropdown-content-upper a{
-    float: none;
-    display: block;
-}
-.dropdown-upper:hover .dropdown-content-upper{
-    display: block;
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: medium;
 }
 
-.dropdown-lower{
-    float: left;
-    overflow: hidden;
+.dropdown-upper {
+  float: left;
+  overflow: hidden;
 }
-.dropdown-content-lower{
-    display: none;
-    position: absolute;
-    margin-top: 50px;
-    background-color: hsl(0, 0%, 15%);
+.dropdown-content-upper {
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 15%);
 }
-.dropdown-content-lower a{
-    float: none;
-    display: block;
+.dropdown-content-upper a {
+  float: none;
+  display: block;
 }
-.dropdown-lower:hover .dropdown-content-lower{
-    display: block;
-}
-aside{
-    width: 33%;
-    float: left;
-    padding: 10px;
-    color: rgb(0, 0, 0);
+.dropdown-upper:hover .dropdown-content-upper {
+  display: block;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.dropdown-lower {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content-lower {
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 15%);
+}
+.dropdown-content-lower a {
+  float: none;
+  display: block;
+}
+.dropdown-lower:hover .dropdown-content-lower {
+  display: block;
+}
+.dropdown-calculators {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content-calculators {
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 15%);
+}
+.dropdown-content-calculators a {
+  float: none;
+  display: block;
+}
+.dropdown-calculators:hover .dropdown-content-calculators {
+  display: block;
+}
 
-    background-color: hsl(0, 0%, 10%);
-    display: block;
-    clear: both;
-    color: white;
-    text-align: center;
-    padding: 10px;
+aside {
+  width: 33%;
+  float: left;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background-color: hsl(0, 0%, 10%);
+  display: block;
+  clear: both;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#container {
+  padding: 100px;
+  text-align: center;
+}
+#submitBtn {
+  background-color: hsl(0, 0%, 10%);
+  border-radius: 10px;
+  padding: 5px;
 }
