@@ -23,12 +23,15 @@ document.getElementById("submitBtn").onclick = function () {
   } else if (total >= 23) {
     document.getElementById("BMI").innerHTML =
       "Your BMI is: " + rounded + " You are overweight";
+    document.getElementById("overweight").style.display = "block";
   } else if (total >= 18.5) {
     document.getElementById("BMI").innerHTML =
       "Your BMI is: " + rounded + " You are healthy";
+    document.getElementById("healthy").style.display = "block";
   } else if (total < 18.5) {
     document.getElementById("BMI").innerHTML =
       "Your BMI is: " + rounded + " You are underweight";
+    document.getElementById("underweight").style.display = "block";
   } else {
     return (document.getElementById("BMI").innerHTML =
       "Please enter a height and weight");
