@@ -221,7 +221,7 @@ footer {
   border-radius: 10px;
   padding: 5px;
 }
-#hideImg {
+.hideImg {
   display: none;
   width: 300px;
   height: 300px;
