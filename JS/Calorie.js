@@ -57,7 +57,7 @@ document.getElementById("submitBtn").onclick = function () {
       extremeWeightLoss.toFixed(0);
   }
 
-  function maleLightActive() {
+  function maleLittle() {
     maintenance = bmr * 1.375;
     document.getElementById("maintenance").innerHTML = maintenance.toFixed(0);
 
@@ -73,7 +73,7 @@ document.getElementById("submitBtn").onclick = function () {
       extremeWeightLoss.toFixed(0);
   }
 
-  function femaleLightActive() {
+  function femaleLittle() {
     maintenance = bmr * 1.375;
     document.getElementById("maintenance").innerHTML = maintenance.toFixed(0);
 
@@ -85,6 +85,22 @@ document.getElementById("submitBtn").onclick = function () {
     document.getElementById("weightLoss").innerHTML = weightLoss.toFixed(0);
 
     extremeWeightLoss = maintenance * 0.5;
+    document.getElementById("extremeWeightLoss").innerHTML =
+      extremeWeightLoss.toFixed(0);
+  }
+
+  function maleModerate() {
+    maintenance = bmr * 1.375;
+    document.getElementById("maintenance").innerHTML = maintenance.toFixed(0);
+
+    mildWeightLoss = maintenance * 0.89;
+    document.getElementById("mildWeightLoss").innerHTML =
+      mildWeightLoss.toFixed(0);
+
+    weightLoss = maintenance * 0.77;
+    document.getElementById("weightLoss").innerHTML = weightLoss.toFixed(0);
+
+    extremeWeightLoss = maintenance * 0.55;
     document.getElementById("extremeWeightLoss").innerHTML =
       extremeWeightLoss.toFixed(0);
   }
@@ -106,12 +122,12 @@ document.getElementById("submitBtn").onclick = function () {
     document.getElementById("little").checked == true
   ) {
     maleBmr();
-    maleLightActive();
+    maleLittle();
   } else if (
     document.getElementById("female").checked == true &&
     document.getElementById("little").checked == true
   ) {
     femaleBmr();
-    femaleLightActive();
+    femaleLittle();
   }
 };
