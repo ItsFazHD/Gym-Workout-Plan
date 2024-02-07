@@ -233,5 +233,17 @@ document.getElementById("submitBtn").onclick = function () {
   ) {
     femaleBmr();
     femaleVery();
+  } else if (
+    document.getElementById("male").checked == true &&
+    document.getElementById("extraActive").checked == true
+  ) {
+    maleBmr();
+    maleExtra();
+  } else if (
+    document.getElementById("female").checked == true &&
+    document.getElementById("extraActive").checked == true
+  ) {
+    femaleBmr();
+    femaleExtra();
   }
 };
