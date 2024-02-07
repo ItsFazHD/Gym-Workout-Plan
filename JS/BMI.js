@@ -12,7 +12,7 @@ document.getElementById("submitBtn").onclick = function () {
   height = Math.pow(height, 2);
 
   total = weight / height;
-  let rounded = total.toFixed(1);
+  rounded = total.toFixed(1);
 
   if (total >= 27.5) {
     document.getElementById("BMI").innerHTML =

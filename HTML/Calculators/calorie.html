@@ -61,26 +61,30 @@
     </header>
     <br>
     <div class="container">
-        Enter your Age: <input type="text" name="height" id="age" class="textBox"> Years old
+        Enter your Age: <input type="text" name="height" id="age" class="textBox">
         <br> <br>
         Gender:
-        <input type="radio" name="male" id="male"> Male
-        <input type="radio" name="female" id="female"> Female
+        <input type="radio" name="gender" id="male"> Male
+        <input type="radio" name="gender" id="female"> Female
         <br> <br>
         Enter your height: <input type="text" name="height" id="height" class="textBox"> cm
         <br> <br>
         Enter your weight: <input type="text" name="weight" id="weight" class="textBox"> kg
         <br> <br>
         Pick activity level:
-        <input type="radio" name="male" id="sedentary"> Sedentary
-        <input type="radio" name="female" id="little"> Little exercise
+        <input type="radio" name="activity" id="sedentary"> Sedentary
+        <input type="radio" name="activity" id="veryLittle"> very light exercise
+        <input type="radio" name="activity" id="little"> Little exercise
+        <input type="radio" name="activity" id="moderate"> Moderate exercise
+        <input type="radio" name="activity" id="heavy"> Heavy exercise
         <br> <br>
         <button type="submit" class="submit" id="submitBtn">Calculate</button>
         <br> <br>
+
         <table id="hiddenTable">
             <tr>
                 <th class="arrowBox">BMR</th>
-                <td class="resultBox"><label for="BMR"></label></td>
+                <td class="resultBox"><label for="BMR" id="bmr"></label></td>
             </tr>
 
             <tr>

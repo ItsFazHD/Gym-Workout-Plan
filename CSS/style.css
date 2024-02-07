@@ -221,6 +221,11 @@ footer {
   border-radius: 10px;
   padding: 5px;
 }
+.submit:hover {
+  background-color: hsl(0, 0%, 35%);
+  border-radius: 10px;
+  padding: 5px;
+}
 .hideImg {
   display: none;
   width: 200px;
@@ -233,6 +238,7 @@ footer {
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
+  /*display: none;*/
 }
 .arrowBox {
   position: relative;
