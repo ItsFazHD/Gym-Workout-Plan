@@ -12,14 +12,14 @@ header {
 }
 
 dl {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .bg {
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 20%);
   scroll-behavior: smooth;
 }
 .bg-content {
-  background-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 20%);
   scroll-behavior: smooth;
 }
 body {
@@ -31,14 +31,17 @@ body {
 .home-para {
   animation-name: slideLeft;
   animation-duration: 1s;
+  color: white;
 }
 .home-para2 {
   animation-name: slideLeft;
   animation-duration: 3s;
+  color: white;
 }
 .home-para3 {
   animation-name: slideLeft;
   animation-duration: 5s;
+  color: white;
 }
 @keyframes slideLeft {
   from {
@@ -115,21 +118,22 @@ dd {
 }
 
 .pagination a {
-  color: rgb(255, 255, 255);
-  background-color: hsl(0, 0%, 18%);
+  color: rgb(0, 0, 0);
+  background-color: hsl(0, 0%, 90%);
   text-decoration: none;
+  border-radius: 5px;
   padding: 8px 15px;
   display: inline-block;
 }
 
 .pagination a.active {
-  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 65%);
   font-weight: bold;
   border-radius: 5px;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: hsl(0, 0%, 77%);
+  background-color: hsl(0, 0%, 50%);
   border-radius: 5px;
 }
 
@@ -215,6 +219,7 @@ footer {
 .container {
   padding: 10px;
   text-align: center;
+  color: white;
 }
 .submit {
   background-color: hsl(0, 0%, 10%);
