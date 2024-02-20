@@ -9,8 +9,8 @@ function update() {
 
   function formatDate(date) {
     let year = date.getFullYear();
-    let month = "0" + (date.getMonth() + 1);
-    let day = "0" + date.getDate();
+    let month = ("0" + (date.getMonth() + 1)).slice(-2);
+    let day = ("0" + date.getDate()).slice(-2);
 
     return `${day}/${month}/${year}`;
   }
