@@ -13,13 +13,13 @@
     <script src="https://kit.fontawesome.com/8fea9ce366.js" crossorigin="anonymous"></script>
     <script src="/JS/Time.js" defer></script>
     <script src="/JS/Date.js" defer></script>
-    <script src="/JS/Calorie.js" defer></script>
+    <script src="/JS/CalorieSurplus.js" defer></script>
     <title>Calorie Deficit Calculator</title>
 </head>
 
 <body class="bg">
     <header class="bg-header">
-        <h1>Calorie Deficit Calculator</h1>
+        <h1>Calorie Surplus Calculator</h1>
         <label id="myLabel2" for="date"></label>
         <br> <br>
         <label id="myLabel" for="time"></label>
@@ -92,7 +92,7 @@
             <input type="radio" name="activity" id="extraActive"> Extra active
             <br> <br>
         </div>
-        <button type="submit" class="submit" id="submitBtn">Calculate</button>
+        <button type="submit" class="submit" id="submitBtn2">Calculate</button>
         <br> <br>
 
         <table id="hiddenTable">
@@ -107,18 +107,18 @@
             </tr>
 
             <tr>
-                <th class="arrowBox">Mild Weight Loss</th>
-                <td class="resultBox"><label for="Mild" id="mildWeightLoss"></label></td>
+                <th class="arrowBox">Mild Weight Gain</th>
+                <td class="resultBox"><label for="Mild" id="mildWeightGain"></label></td>
             </tr>
 
             <tr>
-                <th class="arrowBox">Weight Loss</th>
-                <td class="resultBox"><label for="weight" id="weightLoss"></label></td>
+                <th class="arrowBox">Weight Gain</th>
+                <td class="resultBox"><label for="Weight" id="weightGain"></label></td>
             </tr>
 
             <tr>
-                <th class="arrowBox">Extreme Weight Loss</th>
-                <td class="resultBox"><label for="Extreme" id="extremeWeightLoss"></label></td>
+                <th class="arrowBox">Fast Weight Gain</th>
+                <td class="resultBox"><label for="Fast" id="fastWeightGain"></label></td>
             </tr>
 
         </table>
