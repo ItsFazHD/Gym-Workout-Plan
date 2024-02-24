@@ -29,18 +29,12 @@ body {
   height: 100vh;
 }
 .home-para {
-  animation-name: slideLeft;
-  animation-duration: 1s;
   color: white;
 }
 .home-para2 {
-  animation-name: slideLeft;
-  animation-duration: 3s;
   color: white;
 }
 .home-para3 {
-  animation-name: slideLeft;
-  animation-duration: 5s;
   color: white;
 }
 @keyframes slideLeft {
