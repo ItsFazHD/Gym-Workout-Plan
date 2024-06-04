@@ -64,6 +64,9 @@ h1 {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar a {
   color: white;
@@ -75,9 +78,9 @@ h1 {
   animation-duration: 1s;
 }
 .navbar a:hover {
-  background-color: hsl(0, 0%, 60%);
-  animation-name: fadeIn;
-  animation-duration: 1s;
+  background-color: hsl(0, 0%, 25%);
+  transition: ease-in;
+  transition-duration: 0.3s;
 }
 .navbar li {
   float: left;
