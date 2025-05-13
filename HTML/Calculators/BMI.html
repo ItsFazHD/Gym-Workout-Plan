@@ -6,63 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="icon" href="/Images/fazhdlogo (1).jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8fea9ce366.js" crossorigin="anonymous"></script>
-    <script src="/JS/Time.js" defer></script>
-    <script src="/JS/Date.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="JS/Menu.js" defer></script>
     <script src="/JS/BMI.js" defer></script>
     <title>BMI Calculator</title>
 </head>
 
 <body class="bg">
-    <header class="bg-header">
+    <nav>
+        <div class="nav-container">
+            <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+            <div class="navbar-wrapper">
+                <ul class="navbar" id="navbar">
+                    <li><a href="/index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Workouts</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/HTML/Upper/Upper A.html">Upper A</a></li>
+                            <li><a href="/HTML/Lower/Lower A.html">Lower A</a></li>
+                            <li><a href="/HTML/Upper/Upper B.html">Upper B</a></li>
+                            <li><a href="/HTML/Lower/Lower B.html">Lower B</a></li>
+                            <li><a href="/HTML/Upper/Upper C.html">Upper C</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">Calculators</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/HTML/Calculators/BMI.html">BMI Calculator</a></li>
+                            <li><a href="/HTML/Calculators/calorie.html">Calorie Deficit Calculator</a></li>
+                            <li><a href="/HTML/Calculators/calorieSurplus.html">Calorie Surplus Calculator</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
         <h1>BMI Calculator</h1>
-        <label id="myLabel2" for="date"></label>
-        <br> <br>
-        <label id="myLabel" for="time"></label>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="/index.html"><button><i class="fa-solid fa-house"></i></button></a></li>
-
-                <div class="dropdown-upper">
-                    <li><a><button>Upper</button></a></li>
-
-                    <div class="dropdown-content-upper">
-                        <a href="/HTML/Upper/Upper A.html">Upper A</a>
-                        <a href="/HTML/Upper/Upper B.html">Upper B</a>
-                        <a href="/HTML/Upper/Upper C.html">Upper C</a>
-                    </div>
-                </div>
-
-                <div class="dropdown-lower">
-                    <li><a><button>Lower</button></a></li>
-
-                    <div class="dropdown-content-lower">
-                        <a href="/HTML/Lower/Lower A.html">Lower A</a>
-                        <a href="/HTML/Lower/Lower B.html">Lower B</a>
-                    </div>
-                </div>
-
-                <div class="dropdown-calculators">
-                    <li><a><button>Calculators</button></a></li>
-
-                    <div class="dropdown-content-calculators">
-                        <a href="/HTML/Calculators/BMI.html">BMI Calculator</a>
-                        <a href="/HTML/Calculators/calorie.html">Calorie Deficit</a>
-                        <a href="/HTML/Calculators/calorieSurplus.html">Calorie Surplus</a>
-                    </div>
-                </div>
-
-            </ul>
-        </nav>
     </header>
-    <br>
 
-    <div class="container">
+    <div class="container-Calculator">
         Enter your height: <input type="text" name="height" id="height" class="textBox"> cm
         <br> <br>
         Enter your weight: <input type="text" name="weight" id="weight" class="textBox"> kg
