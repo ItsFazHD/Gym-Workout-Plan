@@ -249,3 +249,69 @@ a {
     background-color: #0072ff;
   }
 }
+
+.submit {
+  background-color: #00c6ff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit:hover {
+  background-color: #0072ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.hideImg {
+  display: none;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hiddenTable {
+  border: 2px solid #00c6ff;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+/* Arrow box with themed background */
+.arrowBox {
+  position: relative;
+  background: #00c6ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+/* Result box with dark background and light text */
+.resultBox {
+  background: #fff;
+  border: 1px solid #00c6ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  text-align: center;
+  color: #111;
+  font-weight: 500;
+}
+
+/* Text input box styled to fit theme */
+.textBox {
+  border-radius: 8px;
+  border: 1px solid #00c6ff;
+  background-color: #fff;
+  color: #111;
+  padding: 6px 10px;
+  font-family: "Poppins", sans-serif;
+}
