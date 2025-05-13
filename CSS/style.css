@@ -17,6 +17,31 @@ nav {
   z-index: 1000;
 }
 
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.navbar-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar and menu toggle */
+.menu-toggle {
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -122,9 +147,39 @@ a {
   transform: scale(1.02);
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .navbar {
+    display: none;
     flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: #1a1a1a;
+    padding-left: 1rem;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
   }
 }
 
