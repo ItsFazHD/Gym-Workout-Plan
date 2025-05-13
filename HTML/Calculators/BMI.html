@@ -50,20 +50,31 @@
     </header>
 
     <div class="container-Calculator">
-        Enter your height: <input type="text" name="height" id="height" class="textBox"> cm
-        <br> <br>
-        Enter your weight: <input type="text" name="weight" id="weight" class="textBox"> kg
-        <br> <br>
+        <label for="height">Enter your height:</label>
+        <br>
+        <div class="input-wrapper">
+            <label for="height">Enter your height:</label>
+            <input type="text" id="height" class="textBox"> <span>cm</span>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="weight">Enter your weight:</label>
+            <input type="text" id="weight" class="textBox"> <span>kg</span>
+        </div>
+
+        <br>
         <button type="submit" class="submit" id="submitBtn">Calculate</button>
         <br>
         <label for="BMI" id="BMI"> Your BMI is: </label>
-        <br><br>
+        <br>
         <img class="hideImg" id="obese" src="/Images/obese.jpg" alt="Picture of obese bmi">
         <img class="hideImg" id="overweight" src="/Images/overweight.jpg" alt="Picture of overweight bmi">
         <img class="hideImg" id="healthy" src="/Images/healthy.jpg" alt="Picture of healthy bmi">
         <img class="hideImg" id="underweight" src="/Images/underweight.jpg" alt="Picture of underweight bmi">
-
     </div>
+
+
+
 </body>
 
 </html>

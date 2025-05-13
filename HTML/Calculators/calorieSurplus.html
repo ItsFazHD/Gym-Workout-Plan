@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="/JS/Menu.js" defer></script>
     <script src="/JS/CalorieSurplus.js" defer></script>
+    <script src="/JS/Show.js"></script>
     <title>Calorie Deficit Calculator</title>
 </head>
 
@@ -48,37 +49,40 @@
         <h1>Calorie Surplus Calculator</h1>
     </header>
     <div class="container-Calculator">
-        Enter your Age: <input type="text" name="height" id="age" class="textBox">
-        <br>
-        <div class="radios">
-            Gender:
-            <br>
-            <input type="radio" name="gender" id="male"> Male
-            <br>
-            <input type="radio" name="gender" id="female"> Female
+
+        <div class="input-wrapper">
+            <label for="age">Enter your Age:</label>
+            <input type="text" name="age" id="age" class="textBox">
         </div>
 
-        <br>
-        Enter your height: <input type="text" name="height" id="height" class="textBox"> cm
-        <br> <br>
-        Enter your weight: <input type="text" name="weight" id="weight" class="textBox"> kg
-        <br> <br>
+        <div class="radios">
+            <label>Gender:</label>
+            <div><input type="radio" name="gender" id="male"> <label for="male">Male</label></div>
+            <div><input type="radio" name="gender" id="female"> <label for="female">Female</label></div>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="height">Enter your height:</label>
+            <input type="text" name="height" id="height" class="textBox"> <span>cm</span>
+        </div>
+
+        <div class="input-wrapper">
+            <label for="weight">Enter your weight:</label>
+            <input type="text" name="weight" id="weight" class="textBox"> <span>kg</span>
+        </div>
 
         <div class="radios">
-            Pick activity level:
-            <br>
-            <input type="radio" name="activity" id="sedentary"> Sedentary
-            <br>
-            <input type="radio" name="activity" id="little"> Little exercise
-            <br>
-            <input type="radio" name="activity" id="moderate"> Active exercise
-            <br>
-            <input type="radio" name="activity" id="veryActive"> Very active
-            <br>
-            <input type="radio" name="activity" id="extraActive"> Extra active
-            <br> <br>
+            <label>Pick activity level:</label>
+            <div><input type="radio" name="activity" id="sedentary"> <label for="sedentary">Sedentary</label></div>
+            <div><input type="radio" name="activity" id="little"> <label for="little">Little exercise</label></div>
+            <div><input type="radio" name="activity" id="moderate"> <label for="moderate">Active exercise</label></div>
+            <div><input type="radio" name="activity" id="veryActive"> <label for="veryActive">Very active</label></div>
+            <div><input type="radio" name="activity" id="extraActive"> <label for="extraActive">Extra active</label>
+            </div>
         </div>
+
         <button type="submit" class="submit" id="submitBtn2">Calculate</button>
+
         <br>
 
         <table id="hiddenTable">
@@ -86,29 +90,26 @@
                 <th class="arrowBox">BMR</th>
                 <td class="resultBox"><label for="BMR" id="bmr"></label></td>
             </tr>
-
             <tr>
                 <th class="arrowBox">Maintenance</th>
                 <td class="resultBox"><label for="Maintenance" id="maintenance"></label></td>
             </tr>
-
             <tr>
                 <th class="arrowBox">Mild Weight Gain</th>
                 <td class="resultBox"><label for="Mild" id="mildWeightGain"></label></td>
             </tr>
-
             <tr>
                 <th class="arrowBox">Weight Gain</th>
                 <td class="resultBox"><label for="Weight" id="weightGain"></label></td>
             </tr>
-
             <tr>
                 <th class="arrowBox">Fast Weight Gain</th>
                 <td class="resultBox"><label for="Fast" id="fastWeightGain"></label></td>
             </tr>
-
         </table>
+
     </div>
+
 </body>
 
 </html>
