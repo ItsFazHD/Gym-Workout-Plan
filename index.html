@@ -6,55 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="icon" href="/Images/fazhdlogo (1).jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8fea9ce366.js" crossorigin="anonymous"></script>
+    <script src="JS/Time.js" defer></script>
+    <script src="JS/Date.js" defer></script>
     <title>Home</title>
 </head>
 
-<body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#workouts">Workouts</a></li>
-            <li><a href="#bmi">BMI Calculator</a></li>
-        </ul>
-    </nav>
+<body class="bg">
 
-    <header id="home">
-        <h1>Welcome FazzyLift's Workout Plan</h1>
-        <p>My personal workout plan.</p>
+    <header class="bg-header">
+        <h1>Welcome To The Workout Plan</h1>
+        <label id="myLabel2" for="date"></label>
+        <br> <br>
+        <label id="myLabel" for="time"></label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html"><button><i class="fa-solid fa-house"></i></button></a></li>
+
+                <div class="dropdown-upper">
+                    <li><a><button>Upper</button></a></li>
+
+                    <div class="dropdown-content-upper">
+                        <a href="/HTML/Upper/Upper A.html">Upper A</a>
+                        <a href="/HTML/Upper/Upper B.html">Upper B</a>
+                        <a href="/HTML/Upper/Upper C.html">Upper C</a>
+                    </div>
+                </div>
+
+                <div class="dropdown-lower">
+                    <li><a><button>Lower</button></a></li>
+
+                    <div class="dropdown-content-lower">
+                        <a href="/HTML/Lower/Lower A.html">Lower A</a>
+                        <a href="/HTML/Lower/Lower B.html">Lower B</a>
+                    </div>
+                </div>
+                <div class="dropdown-calculators">
+                    <li><a><button>Calculators</button></a></li>
+
+                    <div class="dropdown-content-calculators">
+                        <a href="/HTML/Calculators/BMI.html">BMI Calculator</a>
+                        <a href="/HTML/Calculators/calorie.html">Calorie Deficit</a>
+                        <a href="/HTML/Calculators/calorieSurplus.html">Calorie Surplus</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
     </header>
+    <br>
 
-    <main class="container">
-        <section id="workouts">
-            <h2>Workout Plans</h2>
-            <a href="HTML\Upper\Upper A.html">
-                <div class="workout-card">Upper A</div>
-            </a>
-            <a href="HTML/Lower/Lower A.html">
-                <div class="workout-card">Lower A </div>
-            </a>
-            <a href="HTML/Upper/Upper B.html">
-                <div class="workout-card">Upper B</div>
-            </a>
-            <a href="HTML/Lower/Lower B.html">
-                <div class="workout-card">Lower B</div>
-            </a>
+    <main>
+        <aside class="home-para">
+            <p>
+                <i>The Workout Plan</i> has been devised over many years of hard work and experimentation with different
+                exercises tested to find the optimal split for muscle growth.
+            </p>
+        </aside>
 
-            <a href="HTML/Upper/Upper C.html">
-                <div class="workout-card">Upper C</div>
-            </a>
+        <aside class="home-para2">
+            <p>
+                The split that we concluded was the most optimal is known as the Upper/Lower split. This consists of
+                three upper days and two lower days, which equates to a total of five days.
+            </p>
+        </aside>
 
+        <aside class="home-para3">
+            <p>
+                Each GIF has a YouTube link embedded in it to demonstrate how the exercise is best executed.
+            </p>
+        </aside>
 
-        </section>
-
-        <section id="calculators">
-            <h2>Calculator</h2>
-            <div class="workout-card">BMI Calculator</div>
-            <div class="workout-card">Calorie Deficit Calculator</div>
-            <div class="workout-card">Calorie Surplus Calculator</div>
-
-        </section>
     </main>
+
+    <br>
+    <footer>
+        <p class="footer">&copy; Author: FazHD </p>
+    </footer>
 </body>
 
 </html>
