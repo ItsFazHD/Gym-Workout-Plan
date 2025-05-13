@@ -3,29 +3,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
   const dropdowns = document.querySelectorAll(".dropdown");
 
-  // Toggle the mobile menu on click
-  menuToggle.addEventListener("click", () => {
-    navbar.classList.toggle("active");
+  // Toggle main menu
+  menuToggle?.addEventListener("click", () => {
+    navbar?.classList.toggle("active");
   });
 
-  // Mobile dropdown toggle
+  // Toggle dropdowns on mobile
   dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener("click", (e) => {
+    const toggle = dropdown.querySelector("a");
+    toggle.addEventListener("click", (e) => {
       if (window.innerWidth <= 768) {
-        e.preventDefault(); // Prevent link click for mobile
+        e.preventDefault(); // Only prevent the click if it's the parent <a href="#">
         dropdown.classList.toggle("open");
       }
     });
-  });
-
-  // Close dropdown if clicking outside of it (for mobile)
-  document.addEventListener("click", (e) => {
-    if (window.innerWidth <= 768) {
-      dropdowns.forEach((dropdown) => {
-        if (!dropdown.contains(e.target) && !menuToggle.contains(e.target)) {
-          dropdown.classList.remove("open");
-        }
-      });
-    }
   });
 });
