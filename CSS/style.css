@@ -12,8 +12,6 @@ body {
 }
 /* Sticky Navbar */
 nav {
-  position: sticky;
-  top: 0;
   background-color: #111;
   padding: 1rem;
   z-index: 1000;
@@ -24,6 +22,12 @@ nav {
   justify-content: center;
   gap: 2rem;
   list-style: none;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.navbar > li {
+  position: relative;
 }
 
 .navbar a {
@@ -31,10 +35,46 @@ nav {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  display: inline-block;
 }
 
 .navbar a:hover {
   color: #00c6ff;
+  border-radius: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1f1f1f;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 0.75rem 1rem;
+  display: block;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #00c6ff;
+  color: black;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 header {
